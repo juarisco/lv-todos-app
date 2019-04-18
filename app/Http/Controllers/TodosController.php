@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-class AboutController extends Controller
+class TodosController extends Controller
 {
     public function index()
     {
-        return view('about');
+        return view('todos.index');
     }
 }
