@@ -61,4 +61,13 @@ class TodosController extends Controller
 
         return redirect('/todos');
     }
+
+    public function destroy($todo)
+    {
+        $todo = Todo::find($todo);
+
+        $todo->delete();
+
+        return redirect('/todos');
+    }
 }
